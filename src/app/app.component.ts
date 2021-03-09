@@ -7,9 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'project1';
-  YES_LOGGED = "Hello $username";
+  YES_LOGGED = "Hello %username%";
   NO_LOGGED = "Please, log in"
-  textLogged = "";
+  textLogged = this.NO_LOGGED;
   defaultUSer = "AnonUser";
 
   showAlert(){
@@ -20,7 +20,7 @@ export class AppComponent {
 
   login(){
 
-    this.textLogged = this.YES_LOGGED.replace("%username",this.defaultUSer);
+    this.textLogged = this.YES_LOGGED.replace("%username%",this.defaultUSer);
   }
 
   closeSession(){
