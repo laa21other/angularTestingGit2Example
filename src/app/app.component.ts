@@ -11,7 +11,7 @@ export class AppComponent {
   NO_SESSION = "Please, log in";
   username = "";
   testUsername = "Anon"
-  textLogged = "";
+  textLogged = this.NO_SESSION;
 
 
 
