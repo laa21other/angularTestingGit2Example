@@ -18,6 +18,7 @@ export class AppComponent {
   showAlert(){
 
     alert("this is an alert");
+    
   }
 
   login(){
